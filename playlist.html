@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/8.3.0/nouislider.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/8.3.0/nouislider.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- header -->
+    <section class="header">
+
+        <!-- <div class="window__actions">
+          <i class="ion-record red"></i>
+          <i class="ion-record yellow"></i>
+          <i class="ion-record green"></i>
+        </div>
+         -->
+         <div class="logo">
+            <a href="./index.html">
+              <img src="./image 1.png" alt="Logo" />
+            </a>
+          </div>
+        <div class="page-flows">
+        
+          <span class="flow">
+            <i class="ion-chevron-left"></i>
+          </span>
+          
+          <span class="flow">
+            <i class="ion-chevron-right disabled"></i>
+          </span>
+          
+        </div>
+        
+        <div class="search">
+        
+          <input type="text" placeholder="Search">
+          
+        </div>
+        
+        <div class="user">
+        
+          <div class="user__notifications">
+          
+            <i class="ion-android-notifications"></i>
+            
+          </div>
+          
+          <div class="user__inbox">
+          
+            <i class="ion-archive"></i>
+            
+          </div>
+          
+          <div class="user__info">
+          
+            <span class="user__info__img">
+            
+              <img src="./profile.png" alt="Profile Picture" class="img-responsive">
+              
+            </span>
+            
+            <span class="user__info__name">
+            
+              <span class="first">Shella</span>
+              
+              <span class="last">Wahyu</span>
+              
+            </span>
+            
+          </div>
+          
+          <div class="user__actions">
+          
+            <div class="dropdown">
+              <button class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                <i class="ion-chevron-down"></i>
+              </button>
+              <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
+                <li><a href="#">Private Session</a></li>
+                <li><a href="#">Account</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">Log Out</a></li>
+              </ul>
+            </div>
+            
+          </div>
+          
+        </div>
+        
+      </section>
+      <!-- headerend -->
+
+
+      <!-- konten -->
+      <section class="content">
+      
+        <div class="content__left">
+        
+          <section class="navigation">
+      
+              <!-- Main -->
+              <div class="navigation__list">
+      
+                <div class="navigation__list__header" role="button" data-toggle="collapse" href="#main" aria-expanded="true" aria-controls="main">
+                  Main
+                </div>
+                
+                <div class="collapse in" id="main">
+                
+                  <a href="./index.html" class="navigation__list__item">
+                    <i class="ion-ios-browsers"></i>
+                    <span>Browse</span>
+                  </a>
+      
+
+                </div>
+      
+              </div>
+              <!-- / -->
+      
+              <!-- Your Music -->
+              <div class="navigation__list">
+      
+                <div class="navigation__list__header" role="button" data-toggle="collapse" href="#yourMusic" aria-expanded="true" aria-controls="yourMusic">
+                  Your Music
+                </div>
+                
+                <div class="collapse in" id="yourMusic">
+                
+                  <a href="./songs.html" class="navigation__list__item">
+                    <i class="ion-headphone"></i>
+                    <span>Songs</span>
+                  </a>
+      
+      
+                  <a href="artist.html" class="navigation__list__item">
+                    <i class="ion-person"></i>
+                    <span>Artists</span>
+                  </a>
+      
+      
+                  
+                </div>
+      
+              </div>
+              <!-- / -->
+      
+              <!-- Playlists -->
+              <div class="navigation__list">
+      
+                <div class="navigation__list__header" role="button" data-toggle="collapse" href="#playlists" aria-expanded="true" aria-controls="playlists">
+                  Playlists
+                </div>
+                
+                <div class="collapse in" id="playlists">
+                
+                                  
+                  <a href="./playlist.html" class="navigation__list__item">
+                    <i class="ion-ios-musical-notes"></i>
+                    <span>For You</span>
+                  </a>
+      
+                  
+                </div>
+      
+              </div>
+              <!-- / -->
+      
+            </section>
+            
+          <section class="playlist">
+      
+            <a href="#">
+      
+              <i class="ion-ios-plus-outline"></i>
+      
+              New Playlist
+      
+            </a>
+      
+          </section>
+      
+          <section class="playing">
+      
+            <div class="playing__art">
+      
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/7022/cputh.jpg" alt="Album Art">
+      
+            </div>
+      
+            <div class="playing__song">
+      
+              <a class="playing__song__name">Some Type of Love</a>
+      
+              <a class="playing__song__artist">Charlie Puth</a>
+      
+            </div>
+      
+            <div class="playing__add">
+      
+              <i class="ion-checkmark"></i>
+      
+            </div>
+      
+          </section>
+          
+        </div>
+        <div class="content__middle">
+            <div class="spotify-playlists">
+                <h2>Spotify Playlists</h2>
+        
+                <div class="list">
+                  <div class="item">
+                    <img src="./assets/original-9d5e66cc8c49838ae1f6e44535b24146.webp" />
+                    <div class="play">
+                      <span class="fa fa-play"></span>
+                    </div>
+                    <h4>Today's Top Hits</h4>
+                    <p>Rema & Selena Gomez are on top of the...</p>
+                  </div>
+        
+                  <div class="item">
+                    <img src="./assets/original-d0efadb369ffb2d83b0677489e3979c3.webp" />
+                    <div class="play">
+                      <span class="fa fa-play"></span>
+                    </div>
+                    <h4>RapCaviar</h4>
+                    <p>New Music from Lil Baby, Juice WRLD an...</p>
+                  </div>
+        
+                  <div class="item">
+                    <img src="./assets/original-dc5c3debe024980283cac9876f85587c.webp" />
+                    <div class="play">
+                      <span class="fa fa-play"></span>
+                    </div>
+                    <h4>All out 2010s</h4>
+                    <p>The biggest spmgs pf tje 2010s. Cover:...</p>
+                  </div>
+        
+                  <div class="item">
+                    <img src="./assets/original-e0e88538bb475c1556269551dec61204.webp" />
+                    <div class="play">
+                      <span class="fa fa-play"></span>
+                    </div>
+                    <h4>Rock Classics</h4>
+                    <p>Rock Legends & epic songs that continue t...</p>
+                  </div>
+        
+                  <div class="item">
+                    <img src="./assets/original-f17ff877f868a0774ee6fb13682e8fe0.webp" />
+                    <div class="play">
+                      <span class="fa fa-play"></span>
+                    </div>
+                    <h4>Chill Hits</h4>
+                    <p>Kick back to the best new and recent chill...</p>
+                  </div>
+        
+                  <div class="item">
+                    <img src="./assets/s4___dribbble_version.webp" />
+                    <div class="play">
+                      <span class="fa fa-play"></span>
+                    </div>
+                    <h4>Viva Latino</h4>
+                    <p>Today's top Latin hits elevando nuestra...</p>
+                  </div>
+        
+                  <div class="item">
+                    <img src="./assets/7ebed317398e714eb02e5344093d88c4.webp" />
+                    <div class="play">
+                      <span class="fa fa-play"></span>
+                    </div>
+                    <h4>Mega Hit Mix</h4>
+                    <p>A mega mix of 75 favorites from the last...</p>
+                  </div>
+        
+                  <div class="item">
+                    <img src="./assets/bf4067b70616b5cc772fa9d31caede34.webp" />
+                    <div class="play">
+                      <span class="fa fa-play"></span>
+                    </div>
+                    <h4>All out 80s</h4>
+                    <p>The biggest songs of the 1090s.</p>
+                  </div>
+                </div>
+              </div>
+        
+              <div class="spotify-playlists">
+                <h2>Focus</h2>
+                <div class="list">
+                  <div class="item">
+                    <img src="./assets/d42635b510b9abbb1b960037bca7c07b.webp" />
+                    <div class="play">
+                      <span class="fa fa-play"></span>
+                    </div>
+                    <h4>Peaceful Piano</h4>
+                    <p>Relax and indulge with beautiful piano pieces</p>
+                  </div>
+        
+                  <div class="item">
+                    <img src="./assets/dd48b598ee664d8589a02c8709e1281f.webp" />
+                    <div class="play">
+                      <span class="fa fa-play"></span>
+                    </div>
+                    <h4>Deep Focus</h4>
+                    <p>Keep calm and focus with ambient and pos...</p>
+                  </div>
+        
+                  <div class="item">
+                    <img src="./assets/drib-01_4x.webp" />
+                    <div class="play">
+                      <span class="fa fa-play"></span>
+                    </div>
+                    <h4>Instrumental Study</h4>
+                    <p>Focus with soft study music in the...</p>
+                  </div>
+        
+                  <div class="item">
+                    <img src="./assets/drib-02_4x.webp" />
+                    <div class="play">
+                      <span class="fa fa-play"></span>
+                    </div>
+                    <h4>chill lofi study beats</h4>
+                    <p>The perfect study beats, twenty four...</p>
+                  </div>
+        
+                  <div class="item">
+                    <img src="./assets/fab524fdaef942a8b18cc2eaabbae79d.webp" />
+                    <div class="play">
+                      <span class="fa fa-play"></span>
+                    </div>
+                    <h4>Coding Mode</h4>
+                    <p>Dedicated to all the programmers out there.</p>
+                  </div>
+                  
+                  <div class="item">
+                    <img src="./assets/jewelcase_01drib93.webp" />
+                    <div class="play">
+                      <span class="fa fa-play"></span>
+                    </div>
+                    <h4>Focus Flow</h4>
+                    <p>Uptempo instrumental hip hop beats.</p>
+                  </div>
+        
+                  <div class="item">
+                    <img src="./assets/original-071efc54f5f5e399aa18464c8458bc29.webp" />
+                    <div class="play">
+                      <span class="fa fa-play"></span>
+                    </div>
+                    <h4>Calm Before The Storm</h4>
+                    <p>Calm before the storm music.</p>
+                  </div>
+        
+                  <div class="item">
+                    <img src="./assets/original-2668369ae8c61b36a0b8132d1f096d93.webp" />
+                    <div class="play">
+                      <span class="fa fa-play"></span>
+                    </div>
+                    <h4>Beats to think to</h4>
+                    <p>Focus with deep techno and tech house.</p>
+                  </div>
+                </div>
+              </div>
+        
+              <div class="spotify-playlists">
+                <h2>Mood</h2>
+                <div class="list">
+                  <div class="item">
+                    <img src="./assets/original-3bad16ecebb4cacb9488d2981888504d.webp" />
+                    <div class="play">
+                      <span class="fa fa-play"></span>
+                    </div>
+                    <h4>Mood Booster</h4>
+                    <p>Get happy with today's dose of feel-good...</p>
+                  </div>
+        
+                  <div class="item">
+                    <img src="./assets/original-67bcee4b14254d706a6aecc829e36779.webp" />
+                    <div class="play">
+                      <span class="fa fa-play"></span>
+                    </div>
+                    <h4>Feelin' Good</h4>
+                    <p>Feel good with this positively timeless...</p>
+                  </div>
+        
+                  <div class="item">
+                    <img src="./assets/original-9d5e66cc8c49838ae1f6e44535b24146.webp" />
+                    <div class="play">
+                      <span class="fa fa-play"></span>
+                    </div>
+                    <h4>Dark & Stormy</h4>
+                    <p>Beautifully dark, dramatic tracks.</p>
+                  </div>
+        
+                  <div class="item">
+                    <img src="./assets/original-d0efadb369ffb2d83b0677489e3979c3.webp" />
+                    <div class="play">
+                      <span class="fa fa-play"></span>
+                    </div>
+                    <h4>Feel Good Piano</h4>
+                    <p>Happy vibes for an upbeat morning.</p>
+                  </div>
+        
+                  <div class="item">
+                    <img src="./assets/original-dc5c3debe024980283cac9876f85587c.webp" />
+                    <div class="play">
+                      <span class="fa fa-play"></span>
+                    </div>
+                    <h4>Feelin' Myself</h4>
+                    <p>The hip-hop playlist that's a whole mood...</p>
+                  </div>
+        
+                  <div class="item">
+                    <img src="./assets/original-e0e88538bb475c1556269551dec61204.webp" />
+                    <div class="play">
+                      <span class="fa fa-play"></span>
+                    </div>
+                    <h4>Chill Tracks</h4>
+                    <p>Softer kinda dance</p>
+                  </div>
+        
+                  <div class="item">
+                    <img src="./assets/original-f17ff877f868a0774ee6fb13682e8fe0.webp" />
+                    <div class="play">
+                      <span class="fa fa-play"></span>
+                    </div>
+                    <h4>Feel-Good Indie Rock</h4>
+                    <p>The best indie rock vibes - classic and...</p>
+                  </div>
+        
+                  <div class="item">
+                    <img src="./assets/s4___dribbble_version.webp" />
+                    <div class="play">
+                      <span class="fa fa-play"></span>
+                    </div>
+                    <h4>idk.</h4>
+                    <p>idk.</p>
+                  </div>
+                </div>
+        
+                <hr>
+              </div>
+            </div>
+          
+        </div>
+        
+        <div class="content__right">
+        
+          <div class="social">
+          
+            <div class="friends">
+            
+              <a href="#" class="friend">
+              
+                <i class="ion-android-person"></i>
+                
+                Sam Smith
+                
+              </a>
+              
+              <a href="#" class="friend">
+              
+                <i class="ion-android-person"></i>
+                
+                Tarah Forsyth
+                
+              </a>
+              
+              <a href="#" class="friend">
+              
+                <i class="ion-android-person"></i>
+                
+                Ricahrd Tomkins
+                
+              </a>
+              
+              <a href="#" class="friend">
+              
+                <i class="ion-android-person"></i>
+                
+                Tony Russo
+                
+              </a>
+              
+              <a href="#" class="friend">
+              
+                <i class="ion-android-person"></i>
+                
+                Alyssa Marist
+                
+              </a>
+              
+              <a href="#" class="friend">
+              
+                <i class="ion-android-person"></i>
+                
+                Ron Samson
+                
+              </a>
+              
+            </div>
+            
+            <button class="button-light">Find Friends</button>
+            
+          </div>
+          
+        </div>
+        
+      </section>
+      <!-- kontenend -->
+      <!-- track -->
+      <section class="current-track">
+      
+        <div class="current-track__actions">
+        
+          <a class="ion-ios-skipbackward"></a>
+          
+          <a class="ion-ios-play play"></a>
+          
+          <a class="ion-ios-skipforward"></a>
+          
+        </div>
+        
+        <div class="current-track__progress">
+        
+          <div class="current-track__progress__start">0:01</div>
+          
+          <div class="current-track__progress__bar">
+            
+            <div id="song-progress"></div>
+            
+          </div>
+          
+          <div class="current-track__progress__finish">3:07</div>
+          
+        </div>
+        
+        <div class="current-track__options">
+        
+          <a href="#" class="lyrics">Lyrics</a>
+          
+          <span class="controls">
+          
+            <a href="#" class="control">
+              <i class="ion-navicon"></i>
+            </a>
+            
+            <a href="#" class="control">
+              <i class="ion-shuffle"></i>
+            </a>
+            
+            <a href="#" class="control">
+              <i class="fa fa-refresh"></i>
+            </a>
+            
+            <a href="#" class="control devices">
+              <i class="ion-iphone"></i>
+              <span>Devices Available</span>
+            </a>
+            
+            <a href="#" class="control volume">
+              
+              <i class="ion-volume-high"></i>
+            
+              <div id="song-volume"></div>
+              
+            </a>
+            
+          </span>
+          
+        </div>
+        
+      </section>
+      <!-- trakend -->
+</body>
+</html>
